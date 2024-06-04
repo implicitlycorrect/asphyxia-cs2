@@ -68,6 +68,11 @@ public:
 		return MEM::CallVFunc<const char*, 57U>(this);
 	}
 
+	int GetEngineBuildNumber()
+	{
+		return MEM::CallVFunc<int, 81U>(this);
+	}
+
 	[[nodiscard]] const char* GetProductVersionString()
 	{
 		return MEM::CallVFunc<const char*, 82U>(this);
