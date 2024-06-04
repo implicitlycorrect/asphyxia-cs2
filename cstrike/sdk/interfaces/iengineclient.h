@@ -40,6 +40,14 @@ public:
 		return MEM::CallVFunc<bool, 36U>(this);
 	}
 
+	// https://github.com/akiver/cs-demo-manager/blob/f95f9c344d8f82afe25a95606f2216193d9f0b01/cs2-server-plugin/cs2-server-plugin/cdll_interfaces.h#L92
+	// Allows for executing console commands when in a game
+	// Ex usage: I::Engine->ExecuteClientCmd(0, "noclip", true);
+	void ExecuteClientCmd(int iUnk0MaybeSplitScreenSlotSetTo0, const char* pszCommands, bool bUnk2SetToTrue)
+	{
+		MEM::CallVFunc<void, 43U>(this, iUnk0MaybeSplitScreenSlotSetTo0, pszCommands, bUnk2SetToTrue);
+	}
+
 	// return CBaseHandle index
 	int GetLocalPlayer()
 	{
