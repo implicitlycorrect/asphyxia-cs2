@@ -306,6 +306,8 @@
     <ClInclude Include="utilities\pe64.h">
       <Filter>utilities</Filter>
     </ClInclude>
+    <ClInclude Include="sdk\datatypes\utlbuffer.h" />
+    <ClInclude Include="features\CRC.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\dependencies\imgui\imgui.cpp">
@@ -415,5 +417,6 @@
     <ClCompile Include="utilities\notify.cpp">
       <Filter>utilities</Filter>
     </ClCompile>
+    <ClCompile Include="sdk\datatypes\keyvalues3.cpp" />
   </ItemGroup>
 </Project>
